@@ -1,3 +1,85 @@
 @charset "utf-8";
+/* 기본 스타일 리셋 */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
+body,
+h1, h2, h3, h4, h5, h6,
+p, figure, blockquote,
+dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, sans-serif; /* system-ui OS 기본 UI 폰트를 사용하게 함 윈도우/맥/리눅스 커버 */
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    background: none;
+    border: none;
+    /* outline: none; */
+    /* 접근성 이슈 키보드 포커싱 */
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img,
+video {
+    max-width: 100%;
+    /* 반응형 레이아웃 대응 */
+    height: auto;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
