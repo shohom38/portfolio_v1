@@ -1,2 +1,57 @@
 @charset "utf-8";
 /* 글로벌 폰트, 색상 변수, 타이포 등등 스타일 변경 */
+
+body {
+    background-color: #111111;
+}
+
+section {
+    position: relative;
+}
+
+h3 {
+    font-size: 50px;
+    color: #fff;
+}
+h4 {
+    font-size: 30px;
+    color: #fff;
+}
+.header-wrap li {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-learnmore {
+    margin-top: 11px;
+    text-align: center;
+    color: #ffffff;
+}
+.btn-learnmore::after {
+    content: url('../img/logo_icons/w_arrow\ 1.svg');
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.ind.on {
+    background-color: rgba(255, 255, 255, 1);
+    width: 42px;
+    border-radius: 20px;
+}
+.ind {
+    display: inline-block;
+    transition: all 1s ease;
+    width: 24px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+}
+.ind + .ind {
+    margin-left: 5px;
+}
