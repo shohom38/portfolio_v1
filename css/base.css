@@ -1,20 +1,26 @@
 @charset "utf-8";
 /* 글로벌 폰트, 색상 변수, 타이포 등등 스타일 변경 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 body {
     background-color: #111111;
+    font-family: 'Noto Sans', system-ui, sans-serif; /* system-ui OS 기본 UI 폰트를 사용하게 함 윈도우/맥/리눅스 커버 */
 }
 
 section {
+    /* margin-top: 30px; */
     position: relative;
 }
 
 h3 {
     font-size: 50px;
     color: #fff;
+    letter-spacing: -2px;
 }
 h4 {
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: bold;
     color: #fff;
 }
 .header-wrap li {
@@ -54,4 +60,7 @@ h4 {
 }
 .ind + .ind {
     margin-left: 5px;
+}
+.signature-color {
+    color: #ff6900;
 }

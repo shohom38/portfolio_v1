@@ -20,11 +20,11 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-}
+} 
 
 body {
   min-height: 100vh;
-  font-family: 'Segoe UI', system-ui, sans-serif; /* system-ui OS 기본 UI 폰트를 사용하게 함 윈도우/맥/리눅스 커버 */
+  font-family: 'Noto Sans', system-ui, sans-serif; /* system-ui OS 기본 UI 폰트를 사용하게 함 윈도우/맥/리눅스 커버 */
   background-color: #f8f9fa;
   color: #212529;
 }
